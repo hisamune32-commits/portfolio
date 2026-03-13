@@ -1,0 +1,556 @@
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+
+/* ヘッダー */
+.drawer-nav.drawer-a {
+    background-color: #2544ab;
+    height: 40%;
+    width: 8rem;
+    background-color:#a3d4c3
+
+
+}
+
+.drawer-hamburger.drawer-b {
+    right: 8rem !important;
+}
+
+
+#top{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 2%;
+    z-index: 100;
+    
+}
+
+
+
+.top-center ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+
+/* メイン */
+main{
+    position: relative;
+}
+
+.hero{
+    position: relative;
+}
+
+.top-title{
+    font-size: 4rem;
+    font-weight:500;
+    padding-top: 8%;
+    padding-left: 10%;
+    line-height:2 ;
+    width: 100%;
+    height: 50%;
+    min-width: 420px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-img{
+    width: 100%;
+    min-width: 420px;
+    margin-top: 10%;
+    
+}
+
+
+/* About  */
+#ABOUT{
+    background-image: url(img/back.jpg);
+}
+
+.ABOUT-title{
+    display: flex;
+    padding: 5%;
+    
+}
+
+.ABOUT-title h2,
+.ABOUT-title p{
+    padding: 20px;
+    align-items: center;
+
+}
+.ABOUT-title h2{
+    font-size: 1.5rem;
+
+}
+
+
+
+.ABOUT-title p{
+    
+    font-size: 1.1rem;
+
+}
+
+.profile{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+    padding-left: 20%;
+    padding-top: 5%;
+}
+
+.profile-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    ;
+}
+
+
+
+.name{
+    display: flex;
+    gap: 5%;
+    
+
+}
+
+.name h3{
+    line-height: 1.7;
+    padding-top: 80px;
+}
+
+.name-right{
+    padding-top: 120px;
+}
+
+
+.syussinn{
+    padding: 70px 20px 20px 0;
+}
+
+.profile-flex{
+    align-items: center;
+}
+
+
+
+
+
+
+
+.profile-content{
+    padding: 5% 10%;
+    line-height: 3.8;
+    width: 100%;
+    
+}
+
+.profile-content p{
+    background-color: rgb(226, 238, 234);
+    border-radius: 30px;
+    padding: 3%;
+}
+
+/* STRENGTH */
+
+#STRENGTH{
+    background-image: url(img/back1.jpg);
+    
+}
+
+.STRENGTH-title{
+    display: flex;
+    padding: 5% 5% 0 5%;
+    height: 15%;
+    
+}
+
+
+.STRENGTH-title h2,
+.STRENGTH-title p{
+    padding: 20px;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+
+.STRENGTH-title h2{
+    font-size: 1.5rem;
+
+}
+
+.STRENGTH-title p{
+    
+    font-size: 1.1rem;
+}
+
+/* 聞く力 */
+
+.kiku-flex{
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+    height: 25%;
+}
+
+.kiku-title{
+    width: 95%;
+    padding: 2%;
+}
+
+.kiku-title h3{
+    text-align: center;
+    padding: 2% 2% 7% 2%;
+}
+
+
+.kiku-title p{
+    line-height: 1.8;
+    background-color: #edc1b5;
+    padding: 5%;
+    border-radius: 20px;
+    text-align:left;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+}
+
+.kiku-img{
+    width: 80%;
+    height: 80%;
+    padding: 3%;
+}
+
+/* 継続力 */
+.keiozoku{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 25%;
+    text-align: center;
+}
+
+.keizoku-title{
+    width: 95%;
+}
+
+
+
+
+
+.keizoku-title h3{
+    padding: 2% 2% 7% 2%;
+}
+
+.keizoku-title p{
+    line-height: 1.8;
+    background-color: #a3d4c3;
+    padding: 5%;
+    border-radius: 20px;
+    text-align: left;
+    height: 50%;
+}
+
+/* 責任感 */
+
+.sekinin-flex{
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+    height: 25%;
+
+}
+
+.sekinin-img{
+    
+    width: 50%;
+    height: 90%;
+    margin: 2%;
+
+}
+
+.sekinin-title{
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+}
+
+
+.sekinin-title h3{
+    text-align: center;
+    padding: 2% 2% 7% 2%;
+}
+
+
+.sekinin-title p{
+    line-height: 1.8;
+    background-color: #e7d6f8;
+    padding: 5%;
+    border-radius: 20px;
+    text-align:left;
+    align-items: center;
+    height: 70%;
+}
+
+/* SKILLS */
+#SKILLS{
+    background-image: url(img/4.jpg);
+    background-size: cover;
+}
+
+
+
+.SKILLS-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+
+
+.SKILLS-title{
+    display: flex;
+    gap: 8%;
+    margin:10% 5% 5%;
+    height: 15%;
+    width: 50%;
+    color: white;
+}
+
+.SKILLS-img{
+    width: 50%;
+}
+
+
+/* web */
+.web{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 1%;
+    padding: 2%;
+}
+
+.web-title{
+    align-items: center;
+    background-color: #a3d4c3;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}   
+
+.web-title h2{
+    padding-top: 20%;
+    margin-left: 25%;
+    line-height: 1.8;
+
+
+}
+
+.web-title p{
+    margin-top: 10%;
+    margin-left: 15%;
+    line-height: 1.5;
+}
+
+/* ビジネススキル */
+.business-title{
+    align-items: center;
+    background-color: #a3d4c3;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+.business-title h2{
+    padding-top: 20%;
+    margin-left: 25%;
+    line-height: 1.5;
+}    
+
+.business-title p{
+    margin-top: 10%;
+    margin-left: 15%;
+    line-height: 1.8;
+}
+
+/* WORKS */
+
+#works{
+    background-image: url(img/back.jpg);
+}
+
+.works-title{
+    display: flex;
+    gap: 8%;
+    padding:5%;
+    height: 15%;
+    width: 50%;
+
+}
+
+.works-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    padding: 5%;
+}
+
+.works-img{
+    max-width: 250px;
+    height: 200px;
+    width: 95%;
+}
+
+.works-img-grid h3,
+.works-img-grid p{
+    padding: 3%;
+}
+
+
+/* Contact */
+
+.CONTACT-title{
+    display: flex;
+    gap: 8%;
+    padding:5%;
+    height: 15%;
+    width: 50%;
+
+}
+
+form{
+    margin:0 auto;
+    max-width: 640px;
+}
+
+form p{
+    padding: 2%;
+}
+
+
+
+
+input[type=text],
+input[type=email],
+textarea
+{
+    border: 1px solid;
+    background-color: rgb(200, 197, 197);
+    border-radius: 5px;
+    padding: 1%;
+    margin: 2% 0;
+    width: 100%;
+}
+
+input[type=submit]{
+    border: 1px solid;
+    color: white;
+    background-color: rgb(93, 45, 239);
+    border-radius: 5px;
+    padding: 1%;
+    width: 30%;
+    height: 40px;
+
+}
+
+.submit{
+    text-align: center;
+    
+}
+
+.ya{
+
+    position: absolute;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+
+
+.ya-img{
+    width: 50px;
+    height: 50px;
+}
+
+/* モバイル対応 */
+@media screen and (max-width:780px){
+
+.top-center ul {
+    display:none;
+}
+
+
+.name{
+    flex-direction: column;
+}
+
+
+.name-right{
+    padding-top: 8%;
+}
+
+.kiku-flex,
+.sekinin-flex{
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.keiozoku,
+.kiku-img,
+.sekinin-img,
+.sekinin-title{
+    width: 95%;
+}
+
+.web{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.web-title,
+.business-title{
+    margin:3% auto;
+    
+
+}
+
+.SKILLS{
+    background-position: center;
+    object-fit: cover;
+}
+
+
+.works-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 2%;
+
+}
+
+.works-title,
+.CONTACT-title{
+    width: 100%;
+}
+
+
+}
