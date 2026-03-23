@@ -1,37 +1,67 @@
+.blue{
+    color: aqua;
+}
+
 h2{
-    font-size: 24px;
+    font-size: 20px;
+    color:#2544ab;
 }
 
 h3{
     font-size: 20px;
 }
 
+/* スライドショー */
+.slick_arrow{
+    width: 60px;
+    height: 60px;
+    border: 4px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    background-color: white;
+    background: transparent;
+}
 
-/* ヘッダー */
+.slick_prev_arrow{
+    left: 20px;
+    border-right-width:0;
+    border-top-width:0 ;
+    z-index: 1;
+}
+
+.slick_next_arrow{
+    right: 20px;
+    border-left-width:0;
+    border-bottom-width:0 ;
+    z-index: 1;
+}
+
+/*ハンバーガーメニュー*/
 .drawer-nav.drawer-a {
     background-color: #2544ab;
     height: 40%;
     width: 8rem;
     background-color:#a3d4c3
-
-
 }
 
 .drawer-hamburger.drawer-b {
     right: 8rem !important;
 }
 
-
+/* ヘッダーナビゲーション */
 #top{
     display: flex;
     justify-content: center;
     gap: 10%;
     padding: 2%;
-    z-index: 100;
-    
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    background-color: white;
 }
-
-
 
 .top-center ul{
     display: flex;
@@ -39,7 +69,6 @@ h3{
     gap: 30px;
     width: 100%;
 }
-
 
 /* メイン */
 main{
@@ -51,25 +80,22 @@ main{
 }
 
 .top-title{
-    font-size: 4rem;
+    font-size:60px;
     font-weight:500;
+    color: #e9e9ef;
     padding-top: 8%;
     padding-left: 10%;
     line-height:2 ;
     width: 100%;
     height: 50%;
     min-width: 420px;
-    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
 }
-
 .top-img{
     width: 100%;
     min-width: 420px;
-    margin-top: 10%;
-    
 }
 
 
@@ -80,8 +106,8 @@ main{
 
 .ABOUT-title{
     display: flex;
+    gap: 5%;
     padding: 5%;
-    
 }
 
 .ABOUT-title h2,
@@ -91,22 +117,18 @@ main{
 
 }
 .ABOUT-title h2{
-    font-size: 1.5rem;
-
+    font-size: 30px;
+    font-weight: bold;
 }
 
-
-
 .ABOUT-title p{
-    
     font-size: 1.1rem;
-
 }
 
 .profile{
     display: flex;
     justify-content: flex-start;
-    gap: 10%;
+    gap: 15%;
     padding-left: 20%;
     padding-top: 5%;
 }
@@ -115,16 +137,11 @@ main{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    ;
 }
-
-
 
 .name{
     display: flex;
-    gap: 5%;
-    
-
+    gap: 20%;
 }
 
 .name h3{
@@ -136,7 +153,6 @@ main{
     padding-top: 120px;
 }
 
-
 .syussinn{
     padding: 70px 20px 20px 0;
 }
@@ -145,61 +161,66 @@ main{
     align-items: center;
 }
 
-
-
-
-
-
-
 .profile-content{
     padding: 5% 10%;
-    line-height: 3.8;
+    line-height:2;
     width: 100%;
-    
+    border-radius: 55px;   
 }
 
 .profile-content p{
     background-color: rgb(226, 238, 234);
     border-radius: 30px;
     padding: 3%;
+    box-shadow:  30px 30px 13px #747474,
+                -30px -30px 13px #ffffff;
+}
+
+.btn{
+    background-color: #a3d4c3;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 5%;
+    box-shadow:  25px 25px 50px #acacac,
+                -25px -25px 50px #ffffff;
+}
+
+.btn1{
+    background-color: #3dd481;
+    transition: .10S;
 }
 
 /* STRENGTH */
-
 #STRENGTH{
     background-image: url(img/back1.jpg);
-    
 }
 
 .STRENGTH-title{
     display: flex;
     padding: 5% 5% 0 5%;
     height: 15%;
-    
 }
-
 
 .STRENGTH-title h2,
 .STRENGTH-title p{
     padding: 20px;
     align-items: center;
-    font-size: 1.5rem;
-
+    font-size: 30px;
 }
 
-
 .STRENGTH-title h2{
-    font-size: 1.5rem;
-
+    font-weight: bold;
 }
 
 .STRENGTH-title p{
-    
+    padding: 20px;
+    align-items: center;
     font-size: 1.1rem;
 }
 
 /* 聞く力 */
-
 .kiku-flex{
     display: flex;
     justify-content: space-around;
@@ -215,18 +236,19 @@ main{
 .kiku-title h3{
     text-align: center;
     padding: 2% 2% 7% 2%;
+    font-weight: bold;
 }
 
-
 .kiku-title p{
-    line-height: 1.8;
+    line-height: 2;
     background-color: #edc1b5;
     padding: 5%;
     border-radius: 20px;
     text-align:left;
     align-items: center;
-    height: 70%;
     width: 100%;
+    box-shadow:  30px 30px 13px #747474,
+                -30px -30px 13px #ffffff;
 }
 
 .kiku-img{
@@ -240,7 +262,6 @@ main{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    height: 25%;
     text-align: center;
 }
 
@@ -248,12 +269,9 @@ main{
     width: 95%;
 }
 
-
-
-
-
 .keizoku-title h3{
     padding: 2% 2% 7% 2%;
+    font-weight: bold;
 }
 
 .keizoku-title p{
@@ -263,24 +281,22 @@ main{
     border-radius: 20px;
     text-align: left;
     height: 50%;
+    box-shadow:  30px 30px 13px #747474,
+                -30px -30px 13px #ffffff;
 }
 
 /* 責任感 */
-
 .sekinin-flex{
     display: flex;
     justify-content: space-around;
     gap: 5%;
     height: 25%;
-
 }
 
 .sekinin-img{
-    
     width: 50%;
     height: 90%;
     margin: 2%;
-
 }
 
 .sekinin-title{
@@ -289,12 +305,11 @@ main{
     text-align: center;
 }
 
-
 .sekinin-title h3{
     text-align: center;
     padding: 2% 2% 7% 2%;
+    font-weight: bold;
 }
-
 
 .sekinin-title p{
     line-height: 1.8;
@@ -303,24 +318,26 @@ main{
     border-radius: 20px;
     text-align:left;
     align-items: center;
-    height: 70%;
+    box-shadow:  30px 30px 13px #747474,
+                -30px -30px 13px #ffffff;
 }
 
 /* SKILLS */
+.SKILLS-title h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+
 #SKILLS{
     background-image: url(img/4.jpg);
     background-size: cover;
 }
-
-
 
 .SKILLS-flex{
     display: flex;
     justify-content: space-between;
     gap: 1%;
 }
-
-
 
 .SKILLS-title{
     display: flex;
@@ -335,7 +352,6 @@ main{
     width: 50%;
 }
 
-
 /* web */
 .web{
     display: flex;
@@ -348,16 +364,16 @@ main{
     align-items: center;
     background-color: #a3d4c3;
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 370px;
+    height: 370px;
+    box-shadow:  30px 30px 13px #747474,
+                -30px -30px 13px #ffffff;
 }   
 
 .web-title h2{
     padding-top: 20%;
     margin-left: 25%;
     line-height: 1.8;
-
-
 }
 
 .web-title p{
@@ -371,8 +387,10 @@ main{
     align-items: center;
     background-color: #a3d4c3;
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 370px;
+    height: 370px;
+    box-shadow:  30px 30px 13px #747474,
+                -30px -30px 13px #ffffff;
 }
 
 .business-title h2{
@@ -388,9 +406,13 @@ main{
 }
 
 /* WORKS */
-
 #works{
     background-image: url(img/back.jpg);
+}
+
+.works-title h2{
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .works-title{
@@ -399,7 +421,6 @@ main{
     padding:5%;
     height: 15%;
     width: 50%;
-
 }
 
 .works-top{
@@ -420,16 +441,27 @@ main{
     padding: 3%;
 }
 
+.popup{
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+    margin: 3%;
+    background-color: rgb(76, 91, 227);
+    border-radius: 20px;
+}
 
 /* Contact */
-
 .CONTACT-title{
     display: flex;
     gap: 8%;
     padding:5%;
     height: 15%;
     width: 50%;
+}
 
+.CONTACT-title h2{
+    font-size: 30px;
+    font-weight: bold;
 }
 
 form{
@@ -441,15 +473,11 @@ form p{
     padding: 2%;
 }
 
-
-
-
 input[type=text],
 input[type=email],
-textarea
-{
+textarea{
     border: 1px solid;
-    background-color: rgb(200, 197, 197);
+    background-color: rgb(235, 231, 231);
     border-radius: 5px;
     padding: 1%;
     margin: 2% 0;
@@ -464,27 +492,45 @@ input[type=submit]{
     padding: 1%;
     width: 30%;
     height: 40px;
-
 }
 
 .submit{
     text-align: center;
-    
 }
 
 .ya{
-
     position: absolute;
     position: fixed;
     bottom: 5px;
     right: 5px;
 }
 
-
-
 .ya-img{
     width: 50px;
     height: 50px;
+}
+
+.end{
+    background-color: aqua;
+    text-align: center;
+    height: 200px;
+    background-image: url(img/2.svg);
+}
+
+.end-1{
+    padding: 10px;
+    text-align: center;
+}
+
+.end-2{
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 400px;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px ;
 }
 
 /* モバイル対応 */
@@ -494,11 +540,9 @@ input[type=submit]{
     display:none;
 }
 
-
 .name{
     flex-direction: column;
 }
-
 
 .name-right{
     padding-top: 8%;
@@ -509,7 +553,6 @@ input[type=submit]{
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .keiozoku,
@@ -522,7 +565,6 @@ input[type=submit]{
 .web{
     display: flex;
     flex-direction: column;
-
     margin-left: auto;
     margin-right: auto;
 }
@@ -530,8 +572,6 @@ input[type=submit]{
 .web-title,
 .business-title{
     margin:3% auto;
-    
-
 }
 
 .SKILLS{
@@ -539,18 +579,53 @@ input[type=submit]{
     object-fit: cover;
 }
 
-
 .works-top{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 2%;
-
 }
 
 .works-title,
 .CONTACT-title{
     width: 100%;
 }
+}
 
 
+/* 経歴 */
+table{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+table th,td{
+    border: 1px solid #000;
+    height: 60px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.gakureki-title,.syokureki-title{
+    font-size: 20px;
+    padding: 20px;
+}
+
+.sigoto{
+    display: flex;
+    gap: 5%;
+    margin: 20px;
+    line-height: 1.8;
+}
+
+.sigoto-main{
+    background-color: #a3d4c3;
+    z-index: 1;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    border-radius: 52px;
+    box-shadow:  20px 20px 14px #868686,
+                -20px -20px 14px #ffffff;
 }
