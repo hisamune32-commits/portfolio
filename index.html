@@ -10,10 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-
-
+    <link rel="stylesheet" href="magnific-popup.css">
     <title>加藤ポートフォリオ</title>
 </head>
 
@@ -37,8 +34,6 @@
 
     <!-- ヘッダー -->
     <header id="top">
-        
-
         <nav class="top-center">
             <ul>
                 <li><a href="index.html#ABOUT">ABOUT</a></li>
@@ -48,20 +43,22 @@
                 <li><a href="index.html#CONTACT">CONTACT</a></li>
             </ul>
         </nav>
-
-
     </header>
 
     <!-- メイン -->
     <main>
         <div class="hero">
-            <img class="top-img" src="img/top.jpg">
+            <div class="slick">
+                <img class="top-img" src="img/top1.jpg">
+                <img class="top-img" src="img/top2.jpg">
+                <img class="top-img" src="img/top3.jpg">
+                <img class="top-img" src="img/top4.jpg">
+            </div>
+
             <h1 class="top-title">
                 KATO<br>
                 HISAMUNE
             </h1>
-
-            
         </div>
 
 <!-- ABOUT -->
@@ -70,7 +67,7 @@
             <h2>
                 ABOUT
             </h2>    
-            <p>-私について</p>
+            <p>-私について-</p>
         </div>
 
         <div class="profile">
@@ -81,26 +78,28 @@
                         KATO<br>
                         HISAMUNE
                     </h3>
-                        <span class="name-right">加藤　久宗</span>
+                        <span class="name-right">加藤 久宗</span>
                 </div>
 
                 <div class="syussinn">
                 <p>
-                    １９７４年生まれ、岐阜県出身
-                </p>
+                    １９７４年生まれ、岐阜県各務原市出身
+                </p>               
                 </div>
+                <button class="btn"><a href="about.html">経歴</a></button>
             </div>
         </div>
-
-        <div data-aos="flip-left" class="profile-content">
+        
+        <div class="profile-content">
             <p>
                 大学卒業後は貴金属・眼鏡の店頭販売やアパレルの生産管理事務を経験しました。<br>
                 2025年に退職後は職業訓練校にてWEBデザイン・プログラミングの講習を受け
                 現在就職活動中です。<br>
-                趣味は大学から始めたマンドリンという弦楽器を弾くことで、今も社会人団体に所属し演奏会に参加しています。<br>
+                趣味は大学から始めたマンドリンという弦楽器を弾くことで、今も岐阜、名古屋の社会人団体に所属し年に数回演奏会に参加しています。<br>
             </p>
         </div>
     </section>
+
 <!-- STRENGTH -->
     <section id="STRENGTH">
         <div class="STRENGTH-title">
@@ -111,14 +110,12 @@
         </div>
 
         <div class="kiku-flex">
-            <div data-aos="fade-right" class="kiku-title">
+            <div class="kiku-title">
                 <h3>聞く力</h3>
                 <p>相手の意図や気持ちを汲み取りながら、丁寧に話を聞くことができます。<br>
                     コミュニケーションの中で相手が求めているものを理解し、適切に対応できます。<br>
                     ユーザー視点やチーム内の調整に強みを発揮します。
                 </p>
-
-
             </div>
 
             <img class="kiku-img" src="img/1.jpg">
@@ -135,17 +132,13 @@
             </div>
         </div>
         
-
-        <div class="sekinin-flex">
-
+        <div  class="sekinin-flex">
             <img class="sekinin-img" src="img/2.jpg">
-
             <div class="sekinin-title">
                 <h3>責任感</h3>
                 <p> 決められた納期に対しては必ず守り余裕を持ったスケジュール調整をすることができます<br>
                     仕事に対してはミスなく不測の事態に対しては迅速な報告・相談をして解決していきます
                 </p>
-
             </div>
         </div>
     </section>    
@@ -159,7 +152,6 @@
                 </h2>    
                 <p>-私にできること-</p>
             </div>
-
         </div>
 
         <div class="web">
@@ -175,7 +167,7 @@
                 </p>
             </div>
 
-            <div class="business-title">
+            <div  class="business-title">
                 <h2>
                     ビジネススキル
                 </h2>    
@@ -198,43 +190,35 @@
 
         <div class="works-top">
             <div class="works-img-grid">
-                <img class="works-img" src="img/item1.jpg">
-                <h3>
-                    架空のWEBサイト
+                <img class="works-img" src="img/item5.png">
+                <h3 >
+                    <a href="img/item5.png" class="popup">cafeのWEBサイト</a>
                 </h3> 
-                <p>
-                    職業訓練の授業で作成しました。
-                </p>
+                <p>職業訓練の授業の教科書の課題で作成しました。</p>
             </div>     
     
             <div class="works-img-grid">
-                <img class="works-img" src="img/item2.webp">
+                <img class="works-img" src="img/item6.png">
                 <h3>
-                    架空のWEBサイト
+                    <a href="img/item6.png" class="popup">HIVEのWEBサイト</a>
                 </h3> 
-                <p>
-                    職業訓練の授業で作成しました。
-                </p>
+                <p>職業訓練の授業で模写して作成しました。</p>
             </div>     
 
             <div class="works-img-grid">
-                <img class="works-img" src="img/item3.jpg">
+                <img class="works-img" src="img/item7.png">
                 <h3>
-                    架空のWEBサイト
+                    <a href="img/item7.png" class="popup">KininaruのWEBサイト</a>
                 </h3> 
-                <p>
-                    職業訓練の授業で作成しました。
-                </p>
+                <p>職業訓練の授業で模写して作成しました。</p>
             </div>   
             
             <div class="works-img-grid">
-                <img class="works-img" src="img/item4.webp">
+                <img class="works-img" src="img/item8.png">
                 <h3>
-                    架空のWEBサイト
+                    <a href="img/item8.png" class="popup">けものみちのWEBサイト</a>
                 </h3> 
-                <p>
-                    職業訓練の授業で作成しました。
-                </p>
+                <p>職業訓練の授業で模写して作成しました。</p>
             </div>   
         </div>    
     </section>
@@ -247,22 +231,17 @@
             <p>-お問い合わせ-</p>
         </div>
 
-        <form action="">
-
-            <p>
-                NAME<br>
+        <form >
+            <p>NAME(名前)</p>
                 <input type="text" name="name" placeholder="名字 名前">
-            </p>
-
-            <p>
-                MAIL ADRESS<br>
+            
+            <p>MAIL ADRESS(メールアドレス)</p>
                 <input type="email" name="email" placeholder="○○○○＠○○○○">  
-            </p>
+            
 
-            <p>
-                MESSAGE<br>
+            <p>MESSAGE(メッセージ)</p>
                 <textarea name="message" placeholder="メッセージを入力"></textarea>
-            </p>
+            
 
             <p class="submit">
                 <input type="submit" value="送信">
@@ -276,9 +255,13 @@
         </div>
     </section>
 
-
-    
-    </main>
+    <footer>
+        <div class="end">
+            <p class="end-1">下記アドレスまでご連絡ください</p>
+            <p class="end-2">hisamunek@icloud.com</p>
+        </div>
+    </footer>
+</main>
 
 <script src="jquery-2.1.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
@@ -286,7 +269,8 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="jquery.magnific-popup.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
