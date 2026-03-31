@@ -513,8 +513,7 @@ input[type=submit]{
 .end{
     background-color: aqua;
     text-align: center;
-    height: 200px;
-    background-image: url(img/2.svg);
+    height: 100px;
 }
 
 .end-1{
@@ -589,6 +588,8 @@ input[type=submit]{
 .CONTACT-title{
     width: 100%;
 }
+
+
 }
 
 
