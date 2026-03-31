@@ -65,9 +65,9 @@ $(function(){
 // WORK写真
     $('.works-img').hide().fadeIn('slow');
 
-    $('.popup').magnificPopup({
-        type: 'image'
-    });
+    // $('.popup').magnificPopup({
+    //     type: 'image'
+    // });
 
 });
 
